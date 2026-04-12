@@ -1,0 +1,5 @@
+mcp
+fastmcp
+httpx
+beautifulsoup4
+pydantic
