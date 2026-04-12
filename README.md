@@ -12,20 +12,13 @@
 
 ---
 
-## ✨ Features | 核心功能
+## ✨ Key Features | 核心功能
 
-* **🌐 Smart Extraction**: Scrapes the meat, leaves the bones (async fetching).
-* **🧠 Viral SOP**: Injects professional copywriting logic (Hooks, CTA, Scannability).
-* **💾 Local Drafts**: Auto-saves every genius idea to `./drafts` immediately.
-* **智能抓取**：只取干货，异步高效；**营销逻辑**：内置爆款 SOP；**自动存档**：灵感自动落库。
-
----
-
-## 🎮 How to Play | 怎么玩？
-
-1. **The "Remake" Command**: Give Claude a URL and say "remake this".
-2. **Dual-Version Output**: Get a "Deep Insight" version for LinkedIn/WeChat and a "High-Energy" version for X/Xiaohongshu.
-3. **一键洗稿**：丢给 Claude 一个链接，执行 `remake`，直接收获商业深度稿与情绪爆款稿。
+| Feature | Description |
+| :--- | :--- |
+| **The "Remake" Command** | **Give Claude a URL and say "remake this"**<br>一键洗稿：丢给 Claude 一个链接，直接收获商业深度稿与情绪爆款稿 |
+| **Dual-Version Output** | **Get "Deep Insight" for LinkedIn and "High-Energy" for X/Social**<br>双重输出：同步生成 LinkedIn 深度观察与 X/小红书情绪爆款 |
+| **Local Drafts** | **Auto-saves every genius idea to `./drafts` immediately**<br>自动存档：灵感即刻落库，永不丢失每一条金句 |
 
 ---
 
@@ -37,7 +30,7 @@ If this tool saves you 10 minutes of brain cells, hit that ⭐.
 | Stars | Achievement |
 | :--- | :--- |
 | **⭐50** | **The Roast Master** — AI rewrites news with extreme sarcasm <br> **毒舌教主**：开启“键盘侠”模式，让 AI 用最阴阳怪气的口吻重写新闻。 | 
-| **⭐188** | **Cyberpunk 2077** — Tech-noir storytelling <br>**赛博大饼**：把平凡的科技更新，改写成充满霓虹灯、义体、反乌托邦色彩的科幻文案。 | 
+| **⭐188** | **Cyberpunk 2077** — Tech-noir storytelling <br> **赛博大饼**：把平凡的科技更新，改写成充满霓虹灯、义体、反乌托邦色彩的科幻文案。 | 
 | **⭐300** | **The Abstract Master** — Post-modern "Madness" style <br> **抽象大师**：解锁“互联网抽象话”。废话文学、发疯文学，怎么好玩怎么来。 | 
 | **⭐520** | **"Blind Date" Profile** — News as a high-end date bio <br> **高端相亲模式**：把枯燥财报改写成“年入百万、海归精英、热爱滑雪”的凡尔赛相亲文案。 | 
 | **⭐888** | **"The Secret Agent"** — Auto-monitor competitors <br> **赛博间谍**：发布自动监控对手动态并生成“回击文案”的保姆级自动化教程。 | 
