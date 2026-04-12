@@ -26,10 +26,6 @@ build/
 .env
 .mcp/
 
-# Generated outputs
-# Remove the line below if you WANT to share your /drafts folder as examples
-drafts/
-
 # OS generated files
 .DS_Store
 Thumbs.db
