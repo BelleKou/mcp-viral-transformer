@@ -2,6 +2,7 @@
 [**⭐ 点我直达右上角点亮星星 | Star this Project**](https://github.com/BelleKou/mcp-viral-transformer)
 > **Turn raw URLs into viral hits. Because manually writing posts is so 2025.** <br> **将枯燥的链接化为爆款。毕竟，手动写文案已经是 2025 年的老古董了。**
 
+[![Glama Score](https://glama.ai/mcp/servers/BelleKou/mcp-viral-transformer/badges/score.svg)](https://glama.ai/mcp/servers/BelleKou/mcp-viral-transformer)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/BelleKou/mcp-viral-transformer/blob/main/LICENSE)
 ![Star Counter](https://img.shields.io/github/stars/BelleKou/mcp-viral-transformer?style=social)
 ![MCP Powered](https://img.shields.io/badge/MCP-Compatible-blue)
@@ -22,10 +23,9 @@
 
 ---
 
-## 🎭 Star Achievement | 星星对赌协议
+## 🏆 Milestone | 星星里程碑
 
-If this tool saves you 10 minutes of brain cells, hit that ⭐.
-如果这个工具帮你省下了死掉的脑细胞，请赏一颗 ⭐。
+*Every ⭐ unlocks a new creative capability.*<br>*每一颗 ⭐，都是一次 AI 玩法的底层进化*
 
 | Stars | Achievement |
 | :--- | :--- |
@@ -40,9 +40,9 @@ If this tool saves you 10 minutes of brain cells, hit that ⭐.
 ## 🛠️ Tech Stack | 技术栈
 
 - **FastMCP**: High-performance Python framework for MCP.
-- **Httpx**: Async HTTP client.
+- **Httpx**: Async-first engine for rapid content retrieval.
 - **BeautifulSoup4**: Robust HTML parsing.
-- **Pydantic**: Type safety and data validation.
+- **Pydantic**: Ensuring strict type safety and structured data outputs.
 
 ---
 
@@ -56,8 +56,14 @@ If this tool saves you 10 minutes of brain cells, hit that ⭐.
 ### 📥 Installation | 安装
 
 ```bash
+# Clone the repository
 git clone https://github.com/BelleKou/mcp-viral-transformer.git
 cd mcp-viral-transformer
+
+# Install dependencies (Modern way)
+uv pip install -e .
+
+# Or the traditional way
 pip install -r requirements.txt
 ```
 
