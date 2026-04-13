@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0.0",
+  "name": "mcp-viral-transformer",
+  "description": "Turn URLs into viral social media posts via remake command.",
+  "category": "Content",
+  "env": {
+    "ANTHROPIC_API_KEY": {
+      "description": "Your Anthropic API Key for Claude",
+      "required": true
+    }
+  }
+}
