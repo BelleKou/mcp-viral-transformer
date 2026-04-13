@@ -67,6 +67,10 @@ uv pip install -e .
 pip install -r requirements.txt
 ```
 
+### ⚙️ Configuration | 配置
+To use this server, you need an **Anthropic API Key**. Set it in your environment:
+- `ANTHROPIC_API_KEY`: Your key from the Anthropic console.
+
 ### 🤖 Claude Desktop Integration | 集成到 Claude Desktop
 
 Add the following to your `claude_desktop_config.json`:
