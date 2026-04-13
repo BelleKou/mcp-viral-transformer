@@ -99,7 +99,7 @@ Add the following to your `claude_desktop_config.json`:
 
 ### Case 1: Silicon Valley Power Play (English Native)
 
-**Source**: Anthropic's $30B Compute Deal
+**Source**: [Anthropic's $30B Compute Deal](https://www.anthropic.com/news/google-broadcom-partnership-compute)
 **Generated File**: 📄 `drafts/anthropic_30b.md`
 
 <details>
@@ -134,7 +134,7 @@ AI is shifting from software to a "Digital Utility." In 2026, the leading AI com
 
 ### Case 2: Industrial Moonshots (Chinese Native)
 
-**Source**: 36Kr - 吉利沃飞长空 IPO
+**Source**: [36Kr - 吉利沃飞长空 IPO](https://m.36kr.com/p/3761766405718785)
 **Generated File**: 📄 `drafts/sky_economy.md`
 
 <details>
