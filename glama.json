@@ -1,12 +1,17 @@
 {
   "schemaVersion": "1.0.0",
   "name": "mcp-viral-transformer",
-  "description": "Turn URLs into viral social media posts via remake command.",
+  "description": "A high-performance MCP server that leverages Claude to transform standard URLs into viral social media content with psychological hooks.",
   "category": "Content",
   "env": {
     "ANTHROPIC_API_KEY": {
-      "description": "Your Anthropic API Key for Claude",
+      "description": "Your Anthropic API Key. Required to access Claude-3.5-Sonnet for content transformation.",
       "required": true
     }
+  },
+  "capabilities": {
+    "prompts": true,
+    "resources": false,
+    "tools": true
   }
 }
