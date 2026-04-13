@@ -1,8 +1,10 @@
 {
-  "schemaVersion": "1.0.0",
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
   "name": "mcp-viral-transformer",
-  "description": "A high-performance MCP server that leverages Claude to transform standard URLs into viral social media content with psychological hooks.",
-  "category": "Content",
+  "description": "Transform URLs into viral social media content with psychological hooks.",
+  "maintainers": [
+    "BelleKou"
+  ],
   "env": {
     "ANTHROPIC_API_KEY": {
       "description": "Your Anthropic API Key. Required to access Claude-3.5-Sonnet for content transformation.",
