@@ -5,6 +5,11 @@
   "maintainers": [
     "BelleKou"
   ],
+  "runtime": {
+    "type": "python",
+    "entrypoint": "src/server.py",
+    "install": "pip install -r requirements.txt"
+  },
   "env": {
     "ANTHROPIC_API_KEY": {
       "description": "Your Anthropic API Key. Required to access Claude-3.5-Sonnet for content transformation.",
