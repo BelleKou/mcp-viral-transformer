@@ -1,0 +1,27 @@
+{
+  "mcpVersion": "1.0.0",
+  "name": "mcp-viral-transformer",
+  "version": "1.1.0",
+  "description": "Transform URLs into viral social media content with psychological hooks.",
+  "tools": [
+    {
+      "name": "transform_url",
+      "description": "Extracts content from a provided URL and transforms it into viral social media posts for platforms like LinkedIn or X, using psychological framing.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "The web URL to be analyzed and transformed."
+          },
+          "platform": {
+            "type": "string",
+            "description": "Target social media platform.",
+            "enum": ["linkedin", "twitter", "red"]
+          }
+        },
+        "required": ["url"]
+      }
+    }
+  ]
+}
