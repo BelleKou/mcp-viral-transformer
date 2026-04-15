@@ -1,8 +1,13 @@
-FROM debian:bookworm-slim
-ENV DEBIAN_FRONTEND=noninteractive \
-    GLAMA_VERSION="1.0.0" \
-    PYTHONUNBUFFERED=1
-RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates curl git && curl -fsSL https://deb.nodesource.com/setup_25.x | bash - && apt-get install -y --no-install-recommends nodejs && npm install -g mcp-proxy@6.4.3 pnpm@10.14.0 && node --version && curl -LsSf https://astral.sh/uv/install.sh | UV_INSTALL_DIR="/usr/local/bin" sh && uv python install 3.11 --default --preview && ln -s $(uv python find) /usr/local/bin/python && python --version && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+FROM python:3.11-slim
+
 WORKDIR /app
-RUN git clone https://github.com/BelleKou/mcp-viral-transformer . && git checkout 01f0494c504e830ad182927c853978d7c3091908
-CMD ["mcp-proxy","--"]
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+RUN mkdir -p /app/drafts && chmod 777 /app/drafts
+
+ENTRYPOINT ["python", "server.py"]
