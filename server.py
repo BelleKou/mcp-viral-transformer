@@ -7,6 +7,7 @@ from pydantic import Field
 from sops import VIRAL_LOGIC_2026, REMAKE_PROMPT_TEMPLATE
 
 # --- 1. Initialize ---
+# Named as 'ViralTransformer' to clearly state its purpose for content creators.
 mcp = FastMCP("ViralTransformer")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -15,14 +16,21 @@ DRAFTS_DIR = os.path.join(BASE_DIR, "drafts")
 # --- 2. Resources ---
 @mcp.resource("mcp://docs/viral-logic")
 def get_viral_logic() -> str:
-    """Returns the 2026 version of viral content logic."""
+    """
+    Returns the comprehensive 2026 version of viral content logic and engagement frameworks.
+    This resource provides the theoretical foundation for transforming raw news into social media hits.
+    """
     return VIRAL_LOGIC_2026
 
 # --- 3. Tools ---
 
 @mcp.tool()
-async def scrape_article(url: str) -> str:
-    """Scrapes clean content from a URL, focusing on the main article body."""
+async def scrape_article(url: str = Field(description="The full destination URL of the news article or blog post to be scraped")) -> str:
+    """
+    Highly efficient web scraper designed to extract clean, readable text from news articles and blogs. 
+    It automatically filters out noise like ads, scripts, and navigation menus. 
+    Use this tool as the first step in the content transformation workflow to gather high-quality source material.
+    """
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
@@ -49,8 +57,15 @@ async def scrape_article(url: str) -> str:
             return f"Error scraping {url}: {str(e)}"
 
 @mcp.tool()
-def save_draft(filename: str, content: str) -> str:
-    """Saves content with a safe filename to the /drafts folder."""
+def save_draft(
+    filename: str = Field(description="A descriptive name for the draft file, e.g., 'tech_news_summary'"), 
+    content: str = Field(description="The final processed viral content to be saved in the file")
+) -> str:
+    """
+    Safely exports processed content into a local Markdown draft file within the /drafts folder. 
+    The tool automatically sanitizes the filename to prevent system errors and ensures UTF-8 encoding. 
+    Use this tool at the final stage of the workflow to persist your generated content for publishing.
+    """
     try:
         os.makedirs(DRAFTS_DIR, exist_ok=True)
         
@@ -69,8 +84,11 @@ def save_draft(filename: str, content: str) -> str:
 
 # --- 4. Prompts ---
 @mcp.prompt(name="remake")
-def remake_viral_content(url: str = Field(description="The source URL to transform")):
-    """The elite workflow to transform links into high-density viral content."""
+def remake_viral_content(url: str = Field(description="The source URL of the article you want to transform into viral social media content")):
+    """
+    An elite, multi-step prompt template that guides the AI to analyze raw links, 
+    extract core psychological hooks, and rewrite them into high-engagement content for 2026.
+    """
     return [
         {
             "role": "user", 
@@ -80,5 +98,3 @@ def remake_viral_content(url: str = Field(description="The source URL to transfo
 
 if __name__ == "__main__":
     mcp.run()
-
-# Final deployment version for Glama - Forced Rescan
